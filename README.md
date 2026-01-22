@@ -1,4 +1,4 @@
-[Uploading politics.html…]()
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
