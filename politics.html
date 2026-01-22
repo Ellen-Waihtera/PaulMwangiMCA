@@ -1,0 +1,2481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAUL MWANGI KAMAU | MCA CANDIDATE ITHIIRU- MURANG'A COUNTY WARD 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ====== ULTIMATE CSS VARIABLES ====== */
+        :root {
+            /* Color Palette - Premium Kenyan Theme */
+            --primary: #1a5d3a;
+            --primary-dark: #0d3b1e;
+            --primary-light: #2e8b57;
+            --secondary: #f9c846;
+            --secondary-dark: #e5b337;
+            --accent: #c41e3a;
+            --accent-light: #e74c3c;
+            --dark: #111827;
+            --dark-light: #1f2937;
+            --light: #f8fafc;
+            --gray: #6b7280;
+            --gray-light: #e5e7eb;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--secondary) 0%, #ffd700 100%);
+            --gradient-dark: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 30px 80px rgba(0, 0, 0, 0.15);
+            
+            /* Transitions */
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            /* Border Radius */
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --radius-full: 9999px;
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 8rem;
+        }
+
+        /* ====== CSS RESET & BASE STYLES ====== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        section {
+            padding: var(--space-xl) 0;
+            position: relative;
+        }
+
+        /* ====== TYPOGRAPHY ====== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            line-height: 1.1;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: var(--space-sm);
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 5px;
+            background: var(--gradient-secondary);
+            border-radius: var(--radius-full);
+        }
+
+        h3 {
+            font-size: 2.2rem;
+            color: var(--dark);
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            color: var(--dark-light);
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: var(--gray);
+            margin-bottom: var(--space-md);
+            line-height: 1.8;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--gray);
+            opacity: 0.9;
+        }
+
+        /* ====== NAVIGATION - PREMIUM GLASS EFFECT ====== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 1000;
+            padding: var(--space-sm) 0;
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .navbar.scrolled {
+            padding: var(--space-xs) 0;
+            box-shadow: var(--shadow-md);
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: var(--space-sm);
+            transition: var(--transition-smooth);
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .logo-icon:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite linear;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-name {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--dark);
+            line-height: 1;
+        }
+
+        .logo-title {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: var(--space-xs) var(--space-sm);
+            transition: var(--transition-smooth);
+            position: relative;
+            border-radius: var(--radius-full);
+        }
+
+        .nav-link:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-full);
+            opacity: 0;
+            transform: scale(0.8);
+            transition: var(--transition-smooth);
+            z-index: -1;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        .nav-link:hover:before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .nav-btn {
+            background: var(--gradient-accent);
+            color: white !important;
+            padding: 12px 32px;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-bounce);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-btn:hover:before {
+            left: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--dark);
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            background: var(--gradient-primary);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+        }
+
+        .menu-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ====== HERO SECTION - PARALLAX EFFECT ====== */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(98, 96, 226, 0.9), rgb(115, 185, 239)), 
+                        url('Paul Mwangi.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 100px;
+        }
+
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='100' cy='100' r='1'/%3E%3Cpath d='M100 0C44.772 0 0 44.772 0 100s44.772 100 100 100 100-44.772 100-100S155.228 0 100 0zm0 180c-44.183 0-80-35.817-80-80s35.817-80 80-80 80 35.817 80 80-35.817 80-80 80z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: var(--space-md);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: var(--space-lg);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .btn {
+            padding: 18px 48px;
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition-bounce);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-secondary);
+            color: var(--dark);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+            border-color: white;
+            transform: translateY(-5px);
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: var(--radius-md);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* ====== STATS COUNTER ====== */
+        .stats-section {
+            background: var(--gradient-dark);
+            color: white;
+            padding: var(--space-lg) 0;
+            transform: skewY(-2deg);
+            margin-top: -100px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stats-section > .container {
+            transform: skewY(2deg);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: var(--space-md);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--secondary);
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 800;
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: block;
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+            font-family: 'Syne', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ====== ABOUT SECTION ====== */
+        .about {
+            background: white;
+            position: relative;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+
+        .candidate-photo {
+            position: relative;
+        }
+
+        .photo-frame {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: var(--transition-smooth);
+        }
+
+        .photo-frame:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .candidate-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition-smooth);
+        }
+
+        .photo-frame:hover .candidate-image {
+            transform: scale(1.05);
+        }
+
+        .photo-badge {
+            position: absolute;
+            top: 30px;
+            right: -20px;
+            background: var(--gradient-accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            box-shadow: var(--shadow-lg);
+            transform: rotate(5deg);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: rotate(5deg) scale(1); }
+            50% { transform: rotate(5deg) scale(1.05); }
+        }
+
+        .section-header {
+            margin-bottom: var(--space-lg);
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--gradient-secondary);
+            color: var(--dark);
+            padding: 8px 24px;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .candidate-highlights {
+            list-style: none;
+            margin-top: var(--space-lg);
+        }
+
+        .candidate-highlights li {
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            padding: var(--space-md);
+            background: var(--light);
+            border-radius: var(--radius-lg);
+            border-left: 5px solid var(--primary);
+            transition: var(--transition-smooth);
+        }
+
+        .candidate-highlights li:hover {
+            transform: translateX(10px);
+            background: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .highlight-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        /* ====== ISSUES SECTION ====== */
+        .issues {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            position: relative;
+        }
+
+        .issues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .issue-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition-bounce);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--gray-light);
+        }
+
+        .issue-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+
+        .issue-card:hover {
+            transform: translateY(-20px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .issue-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-md);
+            color: white;
+            font-size: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+        }
+
+        .issue-card:hover .issue-icon {
+            transform: rotateY(360deg);
+            background: var(--gradient-accent);
+        }
+
+        .issue-content h3 {
+            margin-bottom: var(--space-sm);
+            color: var(--dark);
+        }
+
+        .issue-btn {
+            margin-top: var(--space-md);
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 12px 32px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .issue-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateX(10px);
+        }
+
+        /* ====== TIMELINE SECTION ====== */
+        .timeline {
+            background: var(--dark);
+            color: white;
+            position: relative;
+        }
+
+        .timeline h2 {
+            color: white;
+        }
+
+        .timeline-container {
+            position: relative;
+            max-width: 800px;
+            margin: var(--space-xl) auto;
+        }
+
+        .timeline-container:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--gradient-secondary);
+            border-radius: var(--radius-full);
+        }
+
+        .timeline-item {
+            width: calc(50% - 40px);
+            margin-bottom: var(--space-xl);
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: calc(50% + 40px);
+        }
+
+        .timeline-content {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .timeline-content:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .timeline-date {
+            position: absolute;
+            top: 0;
+            background: var(--gradient-secondary);
+            color: var(--dark);
+            padding: 8px 20px;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            box-shadow: var(--shadow-md);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-date {
+            right: -100px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-date {
+            left: -100px;
+        }
+
+        /* ====== GALLERY SECTION ====== */
+        .gallery {
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: var(--space-md);
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            transform: translateY(100%);
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* ====== CONTACT SECTION ====== */
+        .contact {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            position: relative;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: var(--space-xl) auto 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: var(--space-xl);
+            border-radius: var(--radius-xl);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-md);
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 18px 24px;
+            border-radius: var(--radius-md);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 0 3px rgba(249, 200, 70, 0.1);
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        select option {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-submit {
+            background: var(--gradient-secondary);
+            color: var(--dark);
+            padding: 20px 48px;
+            border-radius: var(--radius-full);
+            border: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition-bounce);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: var(--space-md);
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* ====== FOOTER ====== */
+        .footer {
+            background: var(--dark);
+            color: white;
+            padding: var(--space-xl) 0 var(--space-md);
+            position: relative;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            margin-bottom: var(--space-xl);
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .footer-logo .logo-name {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .footer-logo .logo-title {
+            color: var(--secondary);
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+        }
+
+        .footer-links h3, .footer-contact h3 {
+            color: white;
+            margin-bottom: var(--space-md);
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: var(--space-sm);
+        }
+
+        .footer-links h3:after, .footer-contact h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+
+        .footer-contact p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-contact i {
+            color: var(--secondary);
+            width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            font-size: 1.2rem;
+        }
+
+        .social-link:hover {
+            background: var(--secondary);
+            color: var(--dark);
+            transform: translateY(-5px) rotate(10deg);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .election-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-sm) var(--space-md);
+            border-radius: var(--radius-full);
+            margin-top: var(--space-md);
+        }
+
+        .election-symbol {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        /* ====== MODALS ====== */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-md);
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: var(--radius-xl);
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            animation: modalSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: var(--gray);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-full);
+            background: var(--light);
+        }
+
+        .close-modal:hover {
+            color: var(--accent);
+            transform: rotate(90deg);
+            background: var(--gray-light);
+        }
+
+        .modal-header {
+            background: var(--gradient-primary);
+            padding: var(--space-xl);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .modal-header:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shine 3s infinite linear;
+        }
+
+        .modal-body {
+            padding: var(--space-xl);
+        }
+
+        .donation-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-sm);
+            margin: var(--space-lg) 0;
+        }
+
+        .donation-option {
+            background: var(--light);
+            border: 2px solid var(--gray-light);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .donation-option:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .donation-option.selected {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* ====== RESPONSIVE DESIGN ====== */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 var(--space-lg);
+            }
+            
+            h1 {
+                font-size: 3.8rem;
+            }
+            
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+            
+            .timeline-container:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: calc(100% - 80px);
+                left: 80px !important;
+            }
+            
+            .timeline-date {
+                left: -150px !important;
+                right: auto !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                flex-direction: column;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                width: 100%;
+                padding: var(--space-lg);
+                box-shadow: var(--shadow-xl);
+                transition: var(--transition-smooth);
+                gap: var(--space-md);
+                border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+                max-height: calc(100vh - 80px);
+                overflow-y: auto;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-md);
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .donation-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 var(--space-md);
+            }
+            
+            section {
+                padding: var(--space-lg) 0;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stat-number {
+                font-size: 3rem;
+            }
+            
+            .photo-badge {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin-top: var(--space-md);
+                display: inline-block;
+            }
+            
+            .timeline-date {
+                position: relative;
+                left: 0 !important;
+                margin-bottom: var(--space-sm);
+            }
+        }
+
+        /* ====== UTILITY CLASSES ====== */
+        .text-center { text-align: center; }
+        .text-gradient { background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .bg-gradient { background: var(--gradient-primary); }
+        .mb-0 { margin-bottom: 0; }
+        .mt-2 { margin-top: var(--space-md); }
+        .p-4 { padding: var(--space-lg); }
+        .shadow-lg { box-shadow: var(--shadow-lg); }
+        .rounded-full { border-radius: var(--radius-full); }
+        .animate-pulse { animation: pulse 2s infinite; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-fade-in { animation: fadeInUp 1s ease-out; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ====== CUSTOM SCROLLBAR ====== */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: var(--radius-full);
+            border: 3px solid var(--light);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">PAUL MWANGI KAMAU</span>
+                    <span class="logo-title">MCA Candidate • Ward 3</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#issues" class="nav-link">Platform</a></li>
+                <li class="nav-item"><a href="#timeline" class="nav-link">Plan</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Join</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-btn" id="openDonateModal">Donate Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element" style="width: 100px; height: 100px; top: 20%; left: 10%;"></div>
+            <div class="floating-element" style="width: 80px; height: 80px; top: 60%; right: 15%;"></div>
+            <div class="floating-element" style="width: 120px; height: 120px; bottom: 20%; left: 20%;"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-fade-in">A New Era of Leadership for Murang'a</h1>
+                <p class="lead animate-fade-in">Visionary leadership, transparent governance, and sustainable development for Ward 3. Together, we'll build a prosperous community that works for everyone.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Join Our Movement
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-play-circle"></i> Watch Manifesto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" id="supporters">0</span>
+                    <span class="stat-label">Campaign Supporters</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="projects">0</span>
+                    <span class="stat-label">Development Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="events">0</span>
+                    <span class="stat-label">Community Events</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="days">0</span>
+                    <span class="stat-label">Days to Election</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="candidate-photo">
+                    <div class="photo-frame">
+                        <img src="Paul Mwangi.jpg" 
+                             alt="David Kamau - MCA Candidate" 
+                             class="candidate-image">
+                    </div>
+                    <div class="photo-badge animate-pulse">
+                        <i class="fas fa-star"></i> MCA Candidate
+                    </div>
+                </div>
+                
+                <div class="candidate-info">
+                    <div class="section-header">
+                        <span class="section-tag">Meet Your Candidate</span>
+                        <h2>David Kamau</h2>
+                        <h3 class="text-gradient">Champion of Progress & Transparency</h3>
+                        <p>A dedicated community leader with over 15 years of public service experience. Born and raised in Murang'a, I understand the aspirations and challenges of our people.</p>
+                    </div>
+                    
+                    <ul class="candidate-highlights">
+                        <li>
+                            <div class="highlight-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div>
+                                <h4>County Assembly Leader</h4>
+                                <p>Served as Committee Chair for 3 terms, delivering 50+ community projects</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="highlight-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4>Education Advocate</h4>
+                                <p>Founded scholarship program benefiting 200+ students in Ward 3</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="highlight-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h4>Community Builder</h4>
+                                <p>Initiated youth empowerment programs creating 500+ opportunities</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Issues Section -->
+    <section class="issues" id="issues">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Our Action Plan</span>
+                <h2>Development Agenda</h2>
+                <p class="lead">A comprehensive strategy addressing Ward 3's most pressing needs</p>
+            </div>
+            
+            <div class="issues-grid">
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Water & Sanitation</h3>
+                        <p>Universal clean water access, modern sanitation systems, and sustainable water management solutions.</p>
+                        <button class="issue-btn" data-issue="water">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Infrastructure</h3>
+                        <p>Modern road networks, solar street lighting, and upgraded public facilities across the ward.</p>
+                        <button class="issue-btn" data-issue="infrastructure">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-briefcase-medical"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Healthcare</h3>
+                        <p>Upgraded health facilities, affordable medication, and specialized care for vulnerable groups.</p>
+                        <button class="issue-btn" data-issue="healthcare">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Education</h3>
+                        <p>Digital classrooms, teacher development, and scholarship programs for academic excellence.</p>
+                        <button class="issue-btn" data-issue="education">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Agriculture</h3>
+                        <p>Modern farming techniques, value addition, and market access for agricultural prosperity.</p>
+                        <button class="issue-btn" data-issue="agriculture">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="issue-card">
+                    <div class="issue-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="issue-content">
+                        <h3>Youth Empowerment</h3>
+                        <p>Skills development, entrepreneurship support, and job creation initiatives.</p>
+                        <button class="issue-btn" data-issue="youth">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Our Roadmap</span>
+                <h2>100-Day Action Plan</h2>
+                <p class="lead">Immediate deliverables upon election</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 1-30</div>
+                    <div class="timeline-content">
+                        <h3>Immediate Assessment</h3>
+                        <p>Comprehensive ward audit, stakeholder consultations, and priority project identification.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 31-60</div>
+                    <div class="timeline-content">
+                        <h3>Project Launch</h3>
+                        <p>Initiate water projects, road repairs, and establish community feedback mechanisms.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 61-90</div>
+                    <div class="timeline-content">
+                        <h3>Implementation Phase</h3>
+                        <p>Roll out education programs, healthcare initiatives, and youth empowerment projects.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 91-100</div>
+                    <div class="timeline-content">
+                        <h3>Progress Review</h3>
+                        <p>Community feedback sessions, project evaluation, and planning for next phase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Community Engagement</span>
+                <h2>Campaign Gallery</h2>
+                <p class="lead">Moments from our community engagement activities</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="14364821_330319270651056_3112086230923130330_n.jpg" 
+                         alt="Community Meeting" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Community Forum</h4>
+                        <p>Gitugi Village Meeting</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="JavaScript_certificate.jpg" 
+                         alt="Youth Engagement" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Youth Dialogue</h4>
+                        <p>Empowerment Workshop</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="IMG_20210405_104215_1.jpg" 
+                         alt="Women's Forum" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Women's Forum</h4>
+                        <p>Economic Empowerment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Get Involved</span>
+                <h2>Join Our Movement</h2>
+                <p class="lead">Be part of the change. Volunteer, donate, or stay informed.</p>
+            </div>
+            
+            <form class="contact-form" id="campaignForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" id="email">
+                    </div>
+                    <div class="form-group">
+                        <select id="location" required>
+                            <option value="">Your Location</option>
+                            <option value="gitugi">Gitugi</option>
+                            <option value="kiria">Kiria</option>
+                            <option value="kiharu">Kiharu</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <select id="involvement" required>
+                        <option value="">How would you like to contribute?</option>
+                        <option value="volunteer">Campaign Volunteer</option>
+                        <option value="donor">Campaign Donor</option>
+                        <option value="ambassador">Community Ambassador</option>
+                        <option value="updates">Receive Updates Only</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <textarea placeholder="Your message or suggestions (optional)" rows="4" id="message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Join Movement
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-name">PAUL MWANGI KAMAU</div>
+                    <div class="logo-title">MCA Candidate • Ithiiru Ward</div>
+                    <p class="footer-about">Dedicated to serving Ithiiru with integrity, transparency, and transformative leadership.</p>
+                    
+                    <div class="election-badge">
+                        <div class="election-symbol">🌽</div>
+                        <div>
+                            <div style="font-weight: 700;">Election Symbol</div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">MAIZE</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Candidate</a></li>
+                        <li><a href="#issues"><i class="fas fa-chevron-right"></i> Development Agenda</a></li>
+                        <li><a href="#timeline"><i class="fas fa-chevron-right"></i> Action Plan</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Campaign Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Campaign HQ: Kamurugu Center</p>
+                    <p><i class="fas fa-phone"></i> +254 702 722 193</p>
+                    <p><i class="fas fa-envelope"></i> info@PaulMwangikamau.co.ke</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 6:00 PM</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Paul Mwangi Kamau for MCA Campaign. All rights reserved.</p>
+                <p>Promoted by Friends of Paul Mwangi Kamau | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Donation Modal -->
+    <div class="modal" id="donationModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            
+            <div class="modal-header">
+                <h2 style="color: white; margin-bottom: 10px;">Support Our Campaign</h2>
+                <p style="color: rgba(255, 255, 255, 0.9);">Your contribution fuels our movement for positive change</p>
+            </div>
+            
+            <div class="modal-body">
+                <p style="text-align: center; margin-bottom: 25px;">Select donation amount:</p>
+                
+                <div class="donation-grid">
+                    <div class="donation-option" data-amount="500">KSH 500</div>
+                    <div class="donation-option" data-amount="1000">KSH 1,000</div>
+                    <div class="donation-option" data-amount="2000">KSH 2,000</div>
+                    <div class="donation-option" data-amount="5000">KSH 5,000</div>
+                    <div class="donation-option" data-amount="10000">KSH 10,000</div>
+                    <div class="donation-option" data-amount="other">Custom</div>
+                </div>
+                
+                <div id="customAmountSection" style="display: none; margin: 20px 0;">
+                    <input type="number" placeholder="Enter amount (KSH)" id="customAmountInput" min="100" style="width: 100%;">
+                </div>
+                
+                <div style="margin: 25px 0;">
+                    <label style="display: block; margin-bottom: 10px; font-weight: 600;">Payment Method:</label>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 15px; background: var(--light); border-radius: var(--radius-md); flex: 1;">
+                            <input type="radio" name="paymentMethod" value="mpesa" checked>
+                            <i class="fab fa-cc-mpesa" style="color: #00A36C; font-size: 1.5rem;"></i>
+                            <span>M-Pesa</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 10px 15px; background: var(--light); border-radius: var(--radius-md); flex: 1;">
+                            <input type="radio" name="paymentMethod" value="bank">
+                            <i class="fas fa-university" style="color: var(--primary);"></i>
+                            <span>Bank</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="btn-submit" id="processDonation" style="width: 100%;">
+                    <i class="fas fa-heart"></i> Make Secure Donation
+                </button>
+                
+                <p style="font-size: 0.85rem; color: var(--gray); text-align: center; margin-top: 20px;">
+                    All donations are recorded and comply with election regulations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Ultimate MCA Campaign Website - Premium JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // DOM Elements
+            const navbar = document.getElementById('navbar');
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+            const donationModal = document.getElementById('donationModal');
+            const openDonateModal = document.getElementById('openDonateModal');
+            const closeModal = document.getElementById('closeModal');
+            const campaignForm = document.getElementById('campaignForm');
+            const donationOptions = document.querySelectorAll('.donation-option');
+            const processDonation = document.getElementById('processDonation');
+            const customAmountSection = document.getElementById('customAmountSection');
+            const customAmountInput = document.getElementById('customAmountInput');
+            const issueBtns = document.querySelectorAll('.issue-btn');
+            const stats = {
+                supporters: document.getElementById('supporters'),
+                projects: document.getElementById('projects'),
+                events: document.getElementById('events'),
+                days: document.getElementById('days')
+            };
+
+            // Initialize Animated Counters
+            function animateCounter(element, target, duration = 2000) {
+                let start = 0;
+                const increment = target / (duration / 16);
+                const timer = setInterval(() => {
+                    start += increment;
+                    if (start >= target) {
+                        start = target;
+                        clearInterval(timer);
+                    }
+                    element.textContent = Math.floor(start).toLocaleString();
+                }, 16);
+            }
+
+            // Initialize Stats
+            setTimeout(() => {
+                animateCounter(stats.supporters, 3520);
+                animateCounter(stats.projects, 18);
+                animateCounter(stats.events, 56);
+                animateCounter(stats.days, 47);
+            }, 500);
+
+            // Premium Navigation
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Navbar Scroll Effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Smooth Scroll with Offset
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        navMenu.classList.remove('active');
+                        menuToggle.querySelector('i').classList.remove('fa-times');
+                        menuToggle.querySelector('i').classList.add('fa-bars');
+                        
+                        // Smooth scroll with offset
+                        const offset = 80;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Scroll Animations
+            function initScrollAnimations() {
+                const elements = document.querySelectorAll('.issue-card, .timeline-item, .gallery-item');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -100px 0px'
+                });
+                
+                elements.forEach(element => {
+                    element.style.opacity = '0';
+                    element.style.transform = 'translateY(30px)';
+                    element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    observer.observe(element);
+                });
+            }
+
+            // Initialize animations
+            initScrollAnimations();
+
+            // Campaign Form - Premium Validation
+            campaignForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = {
+                    name: document.getElementById('fullName').value.trim(),
+                    phone: document.getElementById('phone').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    location: document.getElementById('location').value,
+                    involvement: document.getElementById('involvement').value,
+                    message: document.getElementById('message').value.trim()
+                };
+                
+                // Validation
+                if (!formData.name || !formData.phone || !formData.location || !formData.involvement) {
+                    showNotification('Please fill in all required fields.', 'error');
+                    return;
+                }
+                
+                // Phone validation (Kenyan format)
+                const phoneRegex = /^(\+254|0)[17]\d{8}$/;
+                if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
+                    showNotification('Please enter a valid Kenyan phone number.', 'error');
+                    return;
+                }
+                
+                // Email validation (if provided)
+                if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
+                    showNotification('Please enter a valid email address.', 'error');
+                    return;
+                }
+                
+                // Show loading state
+                const submitBtn = campaignForm.querySelector('.btn-submit');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Success - Update stats
+                const currentSupporters = parseInt(stats.supporters.textContent.replace(/,/g, ''));
+                animateCounter(stats.supporters, currentSupporters + 1);
+                
+                // Show success notification
+                showNotification(`Welcome aboard, ${formData.name}! You're now part of our movement. We'll contact you shortly.`, 'success');
+                
+                // Add confetti effect
+                createConfetti();
+                
+                // Reset form
+                campaignForm.reset();
+                
+                // Reset button
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 500);
+            });
+
+            // Donation Modal - Premium Features
+            openDonateModal.addEventListener('click', (e) => {
+                e.preventDefault();
+                donationModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeModal.addEventListener('click', () => {
+                donationModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                resetDonationModal();
+            });
+
+            window.addEventListener('click', (e) => {
+                if (e.target === donationModal) {
+                    donationModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    resetDonationModal();
+                }
+            });
+
+            // Donation Selection
+            let selectedAmount = 0;
+            
+            donationOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    // Remove selection
+                    donationOptions.forEach(opt => {
+                        opt.classList.remove('selected');
+                        opt.style.transform = 'translateY(0)';
+                    });
+                    
+                    // Add selection with animation
+                    option.classList.add('selected');
+                    option.style.transform = 'translateY(-10px)';
+                    
+                    if (option.dataset.amount === 'other') {
+                        customAmountSection.style.display = 'block';
+                        customAmountInput.focus();
+                        selectedAmount = 0;
+                    } else {
+                        customAmountSection.style.display = 'none';
+                        selectedAmount = parseInt(option.dataset.amount);
+                    }
+                });
+            });
+
+            // Custom amount
+            customAmountInput.addEventListener('input', () => {
+                selectedAmount = parseInt(customAmountInput.value) || 0;
+            });
+
+            // Process Donation
+            processDonation.addEventListener('click', async () => {
+                if (selectedAmount === 0) {
+                    showNotification('Please select or enter a donation amount.', 'error');
+                    return;
+                }
+                
+                if (selectedAmount < 100) {
+                    showNotification('Minimum donation amount is KSH 100.', 'error');
+                    return;
+                }
+                
+                const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+                
+                // Show processing
+                const originalText = processDonation.innerHTML;
+                processDonation.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                processDonation.disabled = true;
+                
+                // Simulate payment processing
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                
+                // Success message
+                let successMessage = `Thank you for your KSH ${selectedAmount.toLocaleString()} donation! `;
+                
+                if (paymentMethod === 'mpesa') {
+                    successMessage += 'Check your phone for the M-Pesa prompt.';
+                } else {
+                    successMessage += 'Bank transfer details will be sent to your email.';
+                }
+                
+                // Show success
+                showNotification(successMessage, 'success');
+                
+                // Update stats
+                const currentSupporters = parseInt(stats.supporters.textContent.replace(/,/g, ''));
+                animateCounter(stats.supporters, currentSupporters + Math.floor(selectedAmount / 1000));
+                
+                // Add celebration effect
+                createConfetti();
+                
+                // Close modal after delay
+                setTimeout(() => {
+                    donationModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    resetDonationModal();
+                    
+                    // Reset button
+                    processDonation.innerHTML = originalText;
+                    processDonation.disabled = false;
+                }, 2000);
+            });
+
+            function resetDonationModal() {
+                donationOptions.forEach(opt => {
+                    opt.classList.remove('selected');
+                    opt.style.transform = 'translateY(0)';
+                });
+                customAmountSection.style.display = 'none';
+                customAmountInput.value = '';
+                selectedAmount = 0;
+                document.querySelector('input[value="mpesa"]').checked = true;
+            }
+
+            // Issue Details Modal
+            issueBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const issue = btn.dataset.issue;
+                    const issueDetails = {
+                        water: {
+                            title: 'Water & Sanitation Master Plan',
+                            budget: 'KSH 25M',
+                            timeline: '18 months',
+                            details: [
+                                'Construct 5 new water reservoirs',
+                                'Rehabilitate 15 existing boreholes',
+                                'Install 25km of new water pipes',
+                                'Implement rainwater harvesting in all schools',
+                                'Establish water management committees'
+                            ]
+                        },
+                        infrastructure: {
+                            title: 'Infrastructure Development',
+                            budget: 'KSH 40M',
+                            timeline: '24 months',
+                            details: [
+                                'Upgrade 30km of rural access roads',
+                                'Install 200 solar street lights',
+                                'Construct 5 footbridges',
+                                'Build 3 new market sheds',
+                                'Improve drainage systems'
+                            ]
+                        },
+                        healthcare: {
+                            title: 'Healthcare Improvement Plan',
+                            budget: 'KSH 18M',
+                            timeline: '12 months',
+                            details: [
+                                'Expand 3 health centers',
+                                'Establish mobile clinic services',
+                                'Subsidize medication by 50%',
+                                'Train 30 community health workers',
+                                'Maternal health program'
+                            ]
+                        },
+                        education: {
+                            title: 'Education Excellence Program',
+                            budget: 'KSH 22M',
+                            timeline: '18 months',
+                            details: [
+                                'Digital learning labs in 8 schools',
+                                'Scholarships for 150 students',
+                                'Teacher professional development',
+                                'School feeding program expansion',
+                                'Library and resource centers'
+                            ]
+                        },
+                        agriculture: {
+                            title: 'Agricultural Transformation',
+                            budget: 'KSH 30M',
+                            timeline: '24 months',
+                            details: [
+                                'Modern irrigation schemes',
+                                'Farmer training programs',
+                                'Cooperative strengthening',
+                                'Market linkage initiatives',
+                                'Post-harvest technology'
+                            ]
+                        },
+                        youth: {
+                            title: 'Youth Empowerment Initiative',
+                            budget: 'KSH 15M',
+                            timeline: '12 months',
+                            details: [
+                                'Vocational training center',
+                                'Startup incubation program',
+                                'Internship placements',
+                                'Business mentorship',
+                                'Access to capital'
+                            ]
+                        }
+                    };
+                    
+                    const detail = issueDetails[issue];
+                    if (!detail) return;
+                    
+                    // Create modal
+                    const modal = document.createElement('div');
+                    modal.className = 'modal';
+                    modal.innerHTML = `
+                        <div class="modal-content" style="max-width: 600px;">
+                            <span class="close-modal" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                            <div class="modal-header">
+                                <h2 style="color: white; margin-bottom: 10px;">${detail.title}</h2>
+                                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 10px;">
+                                    <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px;">
+                                        <i class="fas fa-money-bill-wave"></i> ${detail.budget}
+                                    </span>
+                                    <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px;">
+                                        <i class="fas fa-calendar-alt"></i> ${detail.timeline}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <h3 style="margin-bottom: 20px; color: var(--primary);">Key Deliverables</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    ${detail.details.map(item => `
+                                        <li style="padding: 10px 0; border-bottom: 1px solid var(--gray-light); display: flex; align-items: center; gap: 10px;">
+                                            <i class="fas fa-check" style="color: var(--primary);"></i>
+                                            ${item}
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                                <button onclick="this.parentElement.parentElement.parentElement.remove()" 
+                                        class="btn-submit" 
+                                        style="margin-top: 30px; width: 100%;">
+                                    <i class="fas fa-check"></i> Got It
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(modal);
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Close modal on outside click
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) {
+                            modal.remove();
+                            document.body.style.overflow = 'auto';
+                        }
+                    });
+                });
+            });
+
+            // Notification System
+            function showNotification(message, type = 'info') {
+                const notification = document.createElement('div');
+                notification.className = `notification ${type}`;
+                notification.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+                        <span>${message}</span>
+                    </div>
+                    <button onclick="this.parentElement.remove()" style="background: none; border: none; color: inherit; cursor: pointer;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                
+                // Style the notification
+                Object.assign(notification.style, {
+                    position: 'fixed',
+                    top: '20px',
+                    right: '20px',
+                    background: type === 'success' ? 'var(--primary)' : 'var(--accent)',
+                    color: 'white',
+                    padding: '15px 25px',
+                    borderRadius: 'var(--radius-md)',
+                    boxShadow: 'var(--shadow-lg)',
+                    zIndex: '3000',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: '15px',
+                    maxWidth: '400px',
+                    animation: 'slideIn 0.3s ease-out'
+                });
+                
+                document.body.appendChild(notification);
+                
+                // Auto remove after 5 seconds
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.style.animation = 'slideOut 0.3s ease-out';
+                        setTimeout(() => notification.remove(), 300);
+                    }
+                }, 5000);
+                
+                // Add animation styles
+                if (!document.querySelector('#notification-styles')) {
+                    const style = document.createElement('style');
+                    style.id = 'notification-styles';
+                    style.textContent = `
+                        @keyframes slideIn {
+                            from { transform: translateX(100%); opacity: 0; }
+                            to { transform: translateX(0); opacity: 1; }
+                        }
+                        @keyframes slideOut {
+                            from { transform: translateX(0); opacity: 1; }
+                            to { transform: translateX(100%); opacity: 0; }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+            }
+
+            // Confetti Effect
+            function createConfetti() {
+                const confettiCount = 100;
+                const colors = ['#f9c846', '#c41e3a', '#1a5d3a', '#2e8b57', '#ffffff'];
+                
+                for (let i = 0; i < confettiCount; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.style.position = 'fixed';
+                    confetti.style.width = '10px';
+                    confetti.style.height = '10px';
+                    confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.borderRadius = '50%';
+                    confetti.style.top = '0';
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.zIndex = '9999';
+                    confetti.style.pointerEvents = 'none';
+                    
+                    document.body.appendChild(confetti);
+                    
+                    // Animation
+                    const animation = confetti.animate([
+                        { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
+                        { transform: `translateY(${window.innerHeight}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+                    ], {
+                        duration: 1000 + Math.random() * 2000,
+                        easing: 'cubic-bezier(0.215, 0.610, 0.355, 1)'
+                    });
+                    
+                    animation.onfinish = () => confetti.remove();
+                }
+            }
+
+            // Gallery Lightbox
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.querySelector('img').src;
+                    const caption = this.querySelector('h4').textContent;
+                    
+                    const lightbox = document.createElement('div');
+                    lightbox.className = 'modal';
+                    lightbox.innerHTML = `
+                        <div class="modal-content" style="max-width: 90%; background: transparent; box-shadow: none;">
+                            <span class="close-modal" onclick="this.parentElement.parentElement.remove()" 
+                                  style="background: var(--dark); color: white;">&times;</span>
+                            <img src="${imgSrc}" alt="${caption}" 
+                                 style="width: 100%; height: auto; border-radius: var(--radius-lg);">
+                            <div style="color: white; text-align: center; margin-top: 20px; font-size: 1.2rem;">
+                                ${caption}
+                            </div>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(lightbox);
+                    lightbox.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Initialize floating elements
+            function initFloatingElements() {
+                const elements = document.querySelectorAll('.floating-element');
+                elements.forEach((el, index) => {
+                    el.style.animationDelay = (index * 2) + 's';
+                });
+            }
+
+            initFloatingElements();
+
+            // Real-time clock in footer
+            function updateClock() {
+                const now = new Date();
+                const options = { 
+                    weekday: 'long', 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                };
+                
+                const clockElement = document.getElementById('live-clock');
+                if (!clockElement) {
+                    const clock = document.createElement('div');
+                    clock.id = 'live-clock';
+                    clock.style.cssText = `
+                        position: fixed;
+                        bottom: 20px;
+                        right: 20px;
+                        background: var(--primary);
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: var(--radius-md);
+                        font-size: 0.9rem;
+                        z-index: 1000;
+                        box-shadow: var(--shadow-md);
+                        backdrop-filter: blur(10px);
+                    `;
+                    document.body.appendChild(clock);
+                }
+                
+                document.getElementById('live-clock').textContent = 
+                    now.toLocaleDateString('en-KE', options);
+            }
+
+            // Update clock every second
+            setInterval(updateClock, 1000);
+            updateClock();
+
+            // Election countdown
+            function updateCountdown() {
+                const electionDate = new Date('2024-08-09');
+                const now = new Date();
+                const diff = electionDate - now;
+                
+                if (diff > 0) {
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    
+                    stats.days.textContent = days;
+                    
+                    // Update countdown in stats if needed
+                    const countdownElement = document.getElementById('countdown-timer');
+                    if (!countdownElement) {
+                        const timer = document.createElement('div');
+                        timer.id = 'countdown-timer';
+                        timer.style.cssText = `
+                            position: fixed;
+                            bottom: 20px;
+                            left: 20px;
+                            background: var(--accent);
+                            color: white;
+                            padding: 10px 20px;
+                            border-radius: var(--radius-md);
+                            font-weight: bold;
+                            z-index: 1000;
+                            box-shadow: var(--shadow-md);
+                            backdrop-filter: blur(10px);
+                        `;
+                        document.body.appendChild(timer);
+                    }
+                    
+                    document.getElementById('countdown-timer').textContent = 
+                        `${days}d ${hours}h to Election`;
+                }
+            }
+
+            // Update countdown every minute
+            setInterval(updateCountdown, 60000);
+            updateCountdown();
+
+            console.log('🚀 Ultimate MCA Campaign Website Loaded Successfully!');
+            console.log('🎯 Candidate: David Kamau | MCA Ward 3, Murang\'a');
+            console.log('🌟 Premium Features: Parallax, Animations, Countdown, Confetti');
+        });
+    </script>
+</body>
+</html>
